@@ -1,0 +1,57 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    color: azure;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+}
+.part1{
+    width:20%;
+    height: 100%;
+    background-color: black;
+    color: azure;
+}
+.part2{
+    width:80%;
+    height: 100%;
+    color: azure;
+}
+.bg{
+    background-image: url(pic5.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.flex{
+    display: flex;
+}
+.round{
+    border-radius: 50px;
+}
+.logo{
+    height:150px;
+    width: 150px;
+    border-radius: 80px;
+    overflow: hidden;
+    border: 5px solid grey
+}
+.sidebar{
+    position: fixed;
+    left: 0px;
+    top:  0px;
+    display: flex;
+    flex-direction: column;
+    width:20vw;
+    height: 100vh;
+    background-color:black;
+    color: azure;
+    justify-content: space-evenly;
+    list-style: none;
+    align-items: center;
+}
+/* WELCOME portion */
