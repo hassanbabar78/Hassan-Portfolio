@@ -113,11 +113,71 @@ a:hover{
 .padtop{
     padding-top: 150px;
 }
+.padmtop{
+    padding-top: 100px;
+}
 .bigfont{
     font-size: 40px;
     font-family: bold;
-    text-decoration: underline;
+}
+.textfont{
+    font-size: 20px;
 }
 .mediumfont{
-    font-size: 20px;
+    font-size: 25px;
+    font-family: bold;
+    text-decoration: underline;
+}
+/* Container2 (Projects) page of website */
+
+.container2{
+    width: 100vw;
+    height: 100vh;
+    background-color:beige;
+    background-image: url(./bg1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.box{
+    display:grid;
+    /* grid-template-areas: "shogi snake ludo"
+                         "paint dos solitare"
+                         "excel searchengine"; */
+    grid-template-rows: repeat(2, 1fr); 
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 10px; 
+    width: 70%;
+    height: 70%;
+    /* background-color:brown; */
+}
+.box1{
+    grid-row: 1/2;
+    grid-column: 1/2;
+}
+.box2{
+    grid-row: 1/2;
+    grid-column: 2/3;
+}
+.box3{
+    grid-row: 1/2;
+    grid-column: 3/4;
+}
+.box4{
+    grid-row: 2/3;
+    grid-column: 1/2;
+}
+.box5{
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+.box6{
+    grid-row: 2/3;
+    grid-column: 3/4;
+}
+.prodisplay{
+    font-size:30px;
+    font-weight: bold;
+   justify-content: center;
 }
