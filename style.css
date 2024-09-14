@@ -20,6 +20,7 @@ a:hover{
     height: 100vh;
     display: flex;
     flex-direction: row;
+    background-color: rgb(58, 49, 27);
 }
 .part1{
     width:20%;
@@ -136,6 +137,9 @@ header .ppart2 .img{
 }
 .leftspace{
     margin-left: 25%;
+}
+.leftspacesmall{
+    margin-left: 25px;
 }
 .padtop{
     padding-top: 150px;
@@ -308,5 +312,29 @@ header .ppart2 .img{
 .container4{
     width: 100vw;
     height: 100vh;
-    background-color:beige;
+    background-color:aliceblue;
+} 
+.university{
+    height: 10%;
+    width: 70%;
+    border: 1px solid black;
+    border-radius: 50px;
+    background-color: rgb(84, 116, 116);
+    align-items: center;
+    padding-left: 10px;
+}
+.urdu_text{
+    font-family: 'Noto Nastaliq Urdu', serif;
+    direction: rtl;
+    text-align: right;
+    color: azure;
+}
+.marginl1{
+    margin-left: 25%;
+}
+.marginl2{
+    margin-left: 30%;
+}
+.marginl3{
+    margin-left: 38%;
 }
