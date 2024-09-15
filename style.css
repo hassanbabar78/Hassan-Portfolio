@@ -73,10 +73,76 @@ a:hover{
 }
 /* WELCOME portion */
 .welcome{
-    margin-top: 50px;
+    /* margin-top: 50px; */
     justify-content: center;
-    font-size: 70px;
-    font-weight: bold;
+    font-size: 2px;
+    /* font-size: 70px; */
+    /* font-weight: bold; */
+}
+.Anim1{
+    animation: Welcome 3s ease-out 1 forwards;
+}
+@keyframes Welcome {
+    to{
+        margin-top: 50px;
+        font-size: 70px;
+        font-weight: bold;
+    }
+}
+.Anim2{
+    animation: Hi 3s ease 1 forwards;
+}
+@keyframes Hi {
+    from{
+        font-size: 2px;
+        font-weight: 0%;
+    }
+    to{
+        margin-top: 150px;
+        font-size: 30px;
+        font-weight: bold;
+    }
+}
+.Anim3{
+    animation: Name 3s ease-in-out 1 forwards;
+}
+@keyframes Name {
+    from{
+        font-size: 2px;
+        font-weight: 0%;
+    }
+    to{
+        font-size: 30px;
+        font-weight: bold;
+    }
+}
+.Anim4{
+    animation: Developer 3s ease-in-out 1 forwards;
+}
+@keyframes Developer {
+    from{
+        font-size: 2px;
+        font-weight: 0%;
+    }
+    to{
+        margin-left: 100px;
+        font-size: 50px;
+        font-weight: bold;  
+    }
+}
+.Anim5{
+    animation: pic 3s ease-out 1 forwards;
+}
+@keyframes pic {
+    from{
+        width:5%;
+        height: 5%;
+    }
+    to{
+        width:100%;
+        height:100%;
+        border-radius: 5%;
+    }
 }
 .samesize{
     width:100%;
@@ -87,13 +153,12 @@ a:hover{
     width: 50%;
 }
 .ppart2{
-    padding-top: 5%;
-    height: 70%;
-    width: 45%;
+    padding-top: 7%;
+    padding-left: 7%;
+    height: 55%;
+    width: 40%;
 }
-header .ppart2 .img{
-    border-radius: 20px;
-}
+
 .topspace{
     margin-top: 150px;
 }
@@ -117,7 +182,7 @@ header .ppart2 .img{
     font-weight: bold;
 }
 .intro1{
-    margin-left: 100px;
+    /* margin-left: 100px; */
     font-size: 50px;
     font-weight: bold;
 }
@@ -313,4 +378,22 @@ header .ppart2 .img{
     width: 100vw;
     height: 100vh;
     background-color:beige;
+}
+.university{
+    width:70%;
+    height: 10%;
+    background-color: rgb(32, 57, 57);
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 50px;
+    padding-left: 10px;
+}
+.marginl1{
+    margin-left: 25%;
+}
+.marginl2{
+    margin-left: 30%;
+}
+.marginl3{
+    margin-left: 38%;
 }
