@@ -46,6 +46,38 @@ const AboutMySelf = {
     ]
 };
 
+// PROJECTS PAGE
+const AboutProjects = {
+    title: "PROJECTS",
+    subtitle1: "HERE ARE MY FEW",
+    subtitle2: "PROJECTS",
+    projects: [
+        {
+            title: "SHOGI",
+            icon: "./pro1.jpg"
+        },
+        {
+            title: "LUDO",
+            icon: "./pro2.jpg"
+        },
+        {
+           title: "PAINT APP",
+           icon: "./pro3.jpg"
+        },
+        {
+            title: "EXCEL",
+            icon: "./pro6.jpg"
+        },
+        {
+            title: "DOS",
+            icon: "./pro5.jpg"
+        },
+        {
+            title: "SEO",
+            icon: "./pro6.jpg"
+        }
+    ]
+};
 window.onload = function()
 {
     // Update the sidebar menu
@@ -79,6 +111,19 @@ window.onload = function()
         document.querySelector(`.Box${index + 1} .bigfont`).innerHTML = val.title;
         document.querySelector(`.Box${index + 1} p`).innerHTML = val.description;
     });
+
+     //PAGE 3
+    // Populate the Project section
+    document.querySelector("#Projects .leftspace.padmtop").innerHTML = AboutProjects.title;
+    document.querySelector("#Projects .leftspace:nth-of-type(2)").innerHTML = AboutProjects.subtitle1;
+    document.querySelector("#Projects .leftspace:nth-of-type(3)").innerHTML = AboutProjects.subtitle2;
+
+    // Populate the projects (SHOGI, LUDO, PAINTAPP etc)
+    AboutProjects.projects.forEach((val, index) => {
+        document.querySelector(`.box${index + 1} .fullsize`).src = val.icon;
+        document.querySelector(`.box${index + 1} .prodisplay`).innerHTML = val.title;
+    });
+
 
 };
 
