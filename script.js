@@ -111,6 +111,26 @@ const AboutSkills = {
     ]
 };
 
+// EDUCATION PAGE
+const AboutEducation = {
+    title: "EDUCATION",
+    subtitle: "رؤى تعليمية",
+    education: [
+        {
+            degree: "Bachelor's in Computer Science",
+            institute: "جامعة المعلومات والتكنولوجيا لاهور"
+        },
+        {
+            degree: "Intermediate in Pre-Engineering",
+            institute: "گورنمنٹ کالج یونیورسٹی لاہور"
+        },
+        {
+            degree: "Matriculation in medical science",
+            institute: "كلية وابدا للناشئين تاربيلا"
+        }
+    ]
+};
+
 window.onload = function()
 {
     // Update the sidebar menu
@@ -167,6 +187,19 @@ window.onload = function()
         document.querySelector(`.sk${index + 1}`).innerHTML = val.title;
         document.querySelector(`.progress-bar${index + 1}`).innerHTML = val.percentage;
     });
+
+    //PAGE 5
+    // Populate the Education section
+    document.addEventListener('DOMContentLoaded', () => {
+        document.querySelector("#Education .leftspace:nth-of-type(1)").innerHTML = AboutEducation.title;
+        document.querySelector("#Education .leftspace:nth-of-type(2)").innerHTML = AboutEducation.subtitle;
+    
+        AboutEducation.education.forEach((val, index) => {
+            document.querySelector(`.university${index + 1}`).innerHTML = val.degree;
+            document.querySelector(`.marginl${index + 1}`).innerHTML = val.institute;
+        });
+    });
+    
 
 
 };
