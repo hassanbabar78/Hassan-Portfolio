@@ -78,6 +78,39 @@ const AboutProjects = {
         }
     ]
 };
+
+// SKILLS PAGE
+const AboutSkills = {
+    title: "MY SPECIALITY",
+    subtitle1: "MY SKILLS",
+    skills: [
+        {
+            title: "HTML5",
+            percentage: "100%"
+        },
+        {
+            title: "CSS3",
+            percentage: "100%"
+        },
+        {
+           title: "JAVASCRIPT",
+            percentage: "80%"
+        },
+        {
+            title: "SQL",
+            percentage: "100%"
+        },
+        {
+            title: "WordPress",
+            percentage: "30%"
+        },
+        {
+            title: "PhotoShop",
+            percentage: "50%"
+        }
+    ]
+};
+
 window.onload = function()
 {
     // Update the sidebar menu
@@ -112,7 +145,7 @@ window.onload = function()
         document.querySelector(`.Box${index + 1} p`).innerHTML = val.description;
     });
 
-     //PAGE 3
+    // PAGE 3
     // Populate the Project section
     document.querySelector("#Projects .leftspace.padmtop").innerHTML = AboutProjects.title;
     document.querySelector("#Projects .leftspace:nth-of-type(2)").innerHTML = AboutProjects.subtitle1;
@@ -122,6 +155,17 @@ window.onload = function()
     AboutProjects.projects.forEach((val, index) => {
         document.querySelector(`.box${index + 1} .fullsize`).src = val.icon;
         document.querySelector(`.box${index + 1} .prodisplay`).innerHTML = val.title;
+    });
+
+    // PAGE 4
+    // Populate the Skills section
+    document.querySelector("#Skills .leftspace:nth-of-type(1) ").innerHTML = AboutSkills.title;
+    document.querySelector("#Skills .leftspace:nth-of-type(2)").innerHTML = AboutSkills.subtitle1;
+
+    // Populate the Skills (HTML5, CSS3, JAVASCRIPT etc)
+    AboutSkills.skills.forEach((val, index) => {
+        document.querySelector(`.sk${index + 1}`).innerHTML = val.title;
+        document.querySelector(`.progress-bar${index + 1}`).innerHTML = val.percentage;
     });
 
 
