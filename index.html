@@ -5,35 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hassan Portfolio</title>
     <link rel="stylesheet" href="style.css">
+   
 </head>
 <body>
-    <header class="container">
+    <header id="home" class="container">
         <nav class="part1">
             <ul class="sidebar">
-                <div class="logo"> <img src="./mypic.jpg" width="180px" height="180px" alt=""></div>
-                <li class="item"> <a href="http://127.0.0.1:3000/index.html">HOME</a></li>
-                <li class="item">ABOUT</li>
-                <li class="item">PROJECTS</li>
-                <li class="item">SKILLS</li>
-                <li class="item">EDUCATION</li>
-                <li class="item">CONTACT</li>       
+                <div class="logo">
+                    <img src="" width="180px" height="180px" alt="">
+                </div>
+                <li class="item"> <a href="#home">HOME</a></li>
+                <li class="item"> <a href="#About">ABOUT</a></li>
+                <li class="item"><a href="#Projects">PROJECTS</a></li>
+                <li class="item"><a href="#Skills">SKILLS</a></li>
+                <li class="item"><a href="#Education">EDUCATION</a></li>
+                <li class="item">CONTACT</li>
             </ul>
         </nav>
         <div class="part2">
-          <h1 class="welcome flex blackcolor bigfont">مرحباً</h1>
-          <div class="ssize flex">
-            <div class="ppart1">
-                <div class="topspace intro">Hi!</div><br>
-                <div class="intro">I'm Muhammad Hassan!</div><br>
-                <div class="intro1 blackcolor"><i>Front End Developer</i></div>
+            <h1 class="welcome flex blackcolor bigfont"></h1>
+            <div class="ssize flex">
+                <div class="ppart1">
+                    <div class="topspace intro"></div><br>
+                    <div class="intro"></div><br>
+                    <div class="intro1 blackcolor"></div>
+                </div>
+                <div class="ppart2">
+                    <img class="samesizepad" src="" alt="">
+                </div>
             </div>
-            <div class="ppart2">
-                <img class="samesizepad" src="./pic3.jpg" alt="">
-            </div>
-          </div>   
         </div>
     </header>
-    <section class="container1">
+    <section id="About" class="container1">
         <div class="leftspace blackcolor padmtop">ABOUT US</div><br>
         <div class="leftspace blackcolor bigfont">WHO   AM   I?</div><br>
         <p class="leftspace blackcolor topsspace textfont skip"> I am Muhammad Hassan who is currently a student of bachelor's in computer science department
@@ -64,9 +67,8 @@
                 <p class="blackcolor textcenter">Focused on creating efficient, scalable applications for diverse platforms</p>
            </div>
         </div>
-
     </section>
-    <section class="container2">
+    <section id="Projects" class="container2">
         <div class="leftspace blackcolor padmtop">PROJECTS</div><br>
         <div class="leftspace blackcolor mediumfont">HERE  ARE  MY  FEW</div>
         <div class="leftspace blackcolor mediumfont">PROJECTS</div><br>
@@ -74,42 +76,42 @@
             <div class="box1">
                 <div class="prodisplay blackcolor flex">SHOGI</div>   
                 <div class="picsize overflow">
-                    <img class="fullpicsize" src="./pro1.jpg" alt="">      
+                    <img class="fullsize" src="./pro1.jpg" alt="">      
                 </div>              
             </div>
             <div class="box2">
                 <div class="prodisplay blackcolor flex">LUDO</div>
                 <div class="picsize overflow">
-                    <img class="fullpicsize" src="./pro2.jpg" alt="">
+                    <img class="fullsize" src="./pro2.jpg" alt="">
                 </div> 
             </div>
             <div class="box3">
                 <div class="prodisplay blackcolor flex">PAINT APP</div>
                 <div class="picsize overflow">
-                    <img class="fullpicsize" src="./pro3.jpg" alt="">
+                    <img class="fullsize" src="./pro3.jpg" alt="">
                 </div>
             </div>
             <div class="box4">
                 <div class="prodisplay blackcolor flex">EXCEL</div>
                 <div class="picsize overflow">
-                    <img class="fullpicsize" src="./pro4.jpeg" alt="">
+                    <img class="fullsize" src="./pro4.jpeg" alt="">
                 </div>
             </div>
             <div class="box5">
                 <div class="prodisplay blackcolor flex">DOS</div>
                 <div class="picsize overflow">
-                    <img class="fullpicsize" src="./pro5.jpg" alt="">
+                    <img class="fullsize" src="./pro5.jpg" alt="">
                 </div>
             </div>
             <div class="box6">
-                <div class="prodisplay blackcolor flex">SEARCH ENGINE</div>
+                <div class="prodisplay blackcolor flex">SEO</div>
                 <div class="picsize overflow">
-                    <img class="fullpicsize" src="./pro6.jpg" alt="">
+                    <img class="fullsize" src="./pro6.jpg" alt="">
                 </div>
             </div>
         </div>
     </section>
-    <section class="container3">
+    <section id="Skills" class="container3">
         <div class="leftspace blackcolor padmtop">MY SPECIALITY</div><br>
         <div class="leftspace blackcolor mediumfont">MY SKILLS</div><br><br><br>
         <div class="leftspace ">HTML5</div><br>
@@ -125,18 +127,24 @@
         <div class="leftspace">PhotoShop</div><br>
         <div class=" leftspace progress-bar6 smallestfont anim6"> 50% </div><br>
     </section>
-    <section class="container4">
+    <section id="Education" class="container4">
         <div class="leftspace blackcolor padmtop">EDUCATION</div><br>
         <div class="leftspace blackcolor bigfont">رؤى تعليمية</div><br><br>
         <div class="leftspace textfont university flex">Bachelor's in Computer Science<div class="marginl1 bigfont">جامعة المعلومات والتكنولوجيا لاهور</div></div><br>
         <div class="leftspace textfont university flex">Intermediate in Pre-Engineering <div class="marginl2 bigfont">گورنمنٹ کالج یونیورسٹی لاہور</div></div><br>
         <div class="leftspace textfont university flex">Matriculation in medical science <div class="marginl3 bigfont">كلية وابدا للناشئين تاربيلا</div></div><br>
-       <div class="flex skip">
-        <!-- <div class="leftspace"><video height="200px" width="320px" src="./ITU.mp4" controls></video></div>
-        <div class="leftspacesmall"><video height="200px" width="320px" src="./GCU.mp4" controls></video></div>
-        <div class="leftspacesmall"><video height="200px" width="320px" src="./GCU.mp4" controls></video></div> -->
+       <div class=" leftspace flex videosportion">
+            <div class="video1 overflow">
+                <video class="fullsize" src="./ITU.mp4" controls></video>
+            </div>
+            <div class="video2 overflow">
+                <video class="fullsize" src="./GCU.mp4" controls></video>
+            </div>
+            <div class="video3 overflow">
+                <video class="fullsize" src="./GCU.mp4" controls></video>
+            </div>
        </div>
     </section>
-
+    <script src="script.js"></script>
 </body>
 </html>
