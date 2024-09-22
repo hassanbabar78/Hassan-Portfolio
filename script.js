@@ -9,7 +9,7 @@ const mainPageData = {
     Education: "EDUCATION",
     Contact: "CONTACT",
     WelcomeMessage: "مرحباً",
-    Intro: "Hi!",
+    Intro: "Hi Guys!",
     Name: "I'm Muhammad Hassan!",
     Role: "Front End Developer",
     LogoSrc: "./mypic.jpg",
